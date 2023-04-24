@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Presupuesto</title>
+</head>
+<body>
+  <form>
+    <p> PRESUPUESTO</p>
+    <p><select id="TIPO DE CONSULTA">
+        <option value="2750">CONSULTA POR WASSAP</option>
+        <option value="5500">CONSULTA TELEFONICA</option>
+        <option value="27500">CONSULTA PRESENCIAL</option>
+      </select></p>
+    <p> INTERVENCION</p>
+    <p><select id="INTERVENCION">
+        <option value="2750">SIN INTERVENCION EN EXPEDIENTE</option>
+        <option value="5500">CON INTERVENCION EN EXPEDIENTE</option>
+        <option value="5500">CON ANALISIS DE DOCUMENTOS</option>
+      </select></p>
+    <p>ANALISIS</p>
+    <p><select id="ANALISIS">
+        <option value="2750">POSIBLE SOLUCION AL CONFLICTO</option>
+        <option value="5500">PRESENTACION EN AUDIENCIA JUDICIAL</option>
+        <option value="12500">CONTESTACION DE DEMANDA</option>
+      </select></p>
+    <p><input type="button" value="Calcular Presupuesto" onClick="calcularPresupuesto()"></p>
+    <p><input type="text" id="resultado"></p>
+  </form>
+  <script src="app.js"></script>
+</body>
+
+</html>
