@@ -1,3 +1,16 @@
+ingreso();
+
+function ingreso() {
+  let main = document.getElementById('ingreso');
+
+  if (confirm('Hola, estas por ingresar a la pagina de la Dra. Aramayo sobre presupuestos, si desea ver los servicios que ofrece, haga click en "Aceptar", en caso contrario, en "Cancelar"')) {
+    alert("Clickeo Aceptar!, se mostrará la pagina.");
+    main.style.display = 'block';
+  } else {
+    alert("Hizo click en Cancelar!, que pena, usted se lo pierde!");
+    main.style.display = 'none';
+  }
+}
 let nombre = prompt(`Ingresa tu nombre:`);
 alert(`Hola ${nombre}, Bienvenidos a la pagina.Es un gusto `);
 function calcularPresupuesto() {
