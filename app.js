@@ -22,7 +22,6 @@ function ingreso() {
       console.error("El número de teléfono ingresado no es válido.");
       alert("El número de teléfono ingresado no es válido.");
     }
-
     function calcularPresupuesto() {
       let ele1 = document.getElementById('TIPO DE CONSULTA')
       let precio1 = ele1.options[ele1.selectedIndex].value;
