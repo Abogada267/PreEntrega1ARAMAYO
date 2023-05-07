@@ -58,6 +58,5 @@ if (recargo > 0) {
   let cuota = precioFinal / cuotas;
   alert("El precio final es: $" + precioFinal + " en " + cuotas + " cuotas de $" + cuota.toFixed(2));
 }
-
 let url = "https://link.mercadopago.com.ar/abogadamalvinaramayo" + "?preference-id=XXXXXXXXX" + "&total=" + precioFinal + "&installments=" + cuotas;
 window.location.href = url;
