@@ -41,3 +41,23 @@ function ingreso() {
   }
 }
 
+let precio = prompt("Ingrese el precio:");
+let cuotas = prompt("Ingrese la cantidad de cuotas (5 o 10):");
+
+let recargo = 0;
+if (cuotas == 5) {
+  recargo = 0.2;
+} else if (cuotas == 10) {
+  recargo = 0.3;
+} else {
+  alert("La cantidad de cuotas debe ser 5 o 10");
+}
+
+let precioFinal = precio * (1 + recargo);
+if (recargo > 0) {
+  let cuota = precioFinal / cuotas;
+  alert("El precio final es: $" + precioFinal + " en " + cuotas + " cuotas de $" + cuota.toFixed(2));
+}
+
+let url = "https://link.mercadopago.com.ar/abogadamalvinaramayo" + "?preference-id=XXXXXXXXX" + "&total=" + precioFinal + "&installments=" + cuotas;
+window.location.href = url;
